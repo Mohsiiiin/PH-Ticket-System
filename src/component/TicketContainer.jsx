@@ -8,7 +8,7 @@ const TicketContainer = ({Promise}) => {
     const [tickets, setTickets]=useState(data);
     const [ticketStatus, setTicketStatus] = useState([]);
     const [resolvedTask, setResolvedTask] = useState([]);
-    
+
       const handleResolved=(ticket)=>{
     const newResolveTask=[...resolvedTask, ticket];
     setResolvedTask(newResolveTask);
@@ -52,7 +52,7 @@ const TicketContainer = ({Promise}) => {
             </div>
 
             <h2 className='font-bold text-3xl'>Resolved Task</h2>
-            <div className='shadow p-10 space-y-5 text-center'>{resolvedTask.map(tickets=><h3>{tickets.title}</h3>)}</div>
+            <div className='shadow p-10 space-y-5 text-center'>{resolvedTask.map(tickets=><h3 className='bg-green-400 rounded px-10 py-2'>{tickets.title}</h3>)}</div>
 
         </div>
 
