@@ -23,17 +23,9 @@ console.log(ticketsPromise)
         </Suspense>
       </section>
 
-
-
-
-
-
-
-
-
-      {/* <section>
+      <section>
         <Footer></Footer>
-      </section> */}
+      </section>
     </>
   )
 }
