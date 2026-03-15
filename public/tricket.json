@@ -1,0 +1,128 @@
+[
+  {
+    "id": "TKT-1001",
+    "title": "Login Issue on Mobile",
+    "description": "User unable to login via Android app, getting 404 error.",
+    "customer": "Rahim Ahmed",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-01-10T09:30:00Z"
+  },
+  {
+    "id": "TKT-1002",
+    "title": "Payment Gateway Timeout",
+    "description": "Transactions are failing during the final processing step.",
+    "customer": "Karim Ullah",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-01-11T14:20:00Z"
+  },
+  {
+    "id": "TKT-1004",
+    "title": "Password Reset Email Not Received",
+    "description": "Customer requested a password reset but no email arrived.",
+    "customer": "Abir Hasan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-01-13T08:45:00Z"
+  },
+  {
+    "id": "TKT-1005",
+    "title": "Slow Loading Dashboard",
+    "description": "The main dashboard takes more than 10 seconds to load.",
+    "customer": "Mehedi Zaman",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-01-13T16:05:00Z"
+  },
+  {
+    "id": "TKT-1006",
+    "title": "API Documentation Request",
+    "description": "Partner needs updated API docs for the latest release.",
+    "customer": "Laila Islam",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-01-14T10:00:00Z"
+  },
+  {
+    "id": "TKT-1007",
+    "title": "Dark Mode Glitch",
+    "description": "Text is invisible in dark mode on the profile page.",
+    "customer": "Tanvir Rahman",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-01-14T13:25:00Z"
+  },
+  {
+    "id": "TKT-1008",
+    "title": "Refund Status Query",
+    "description": "Customer asking about the status of order #5543 refund.",
+    "customer": "Farhana Yasmin",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-01-15T09:10:00Z"
+  },
+  {
+    "id": "TKT-1009",
+    "title": "Server Downtime Alert",
+    "description": "US-East server cluster is experiencing intermittent drops.",
+    "customer": "System Admin",
+    "priority": "Critical",
+    "status": "Resolved",
+    "createdAt": "2026-01-15T22:40:00Z"
+  },
+  {
+    "id": "TKT-1010",
+    "title": "Profile Picture Upload Error",
+    "description": "JPG files larger than 2MB are being rejected without error message.",
+    "customer": "Nabil Siddique",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-01-16T11:55:00Z"
+  },
+  {
+    "id": "TKT-1011",
+    "title": "Feature Request: Export to PDF",
+    "description": "Users want to export their monthly reports to PDF.",
+    "customer": "Rifat Jahan",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-01-16T15:20:00Z"
+  },
+  {
+    "id": "TKT-1012",
+    "title": "Broken Link in Newsletter",
+    "description": "The link in the weekly newsletter leads to a 404 page.",
+    "customer": "Imran Hossain",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-01-17T07:30:00Z"
+  },
+  {
+    "id": "TKT-1013",
+    "title": "Double Billing Issue",
+    "description": "Customer was charged twice for the monthly subscription.",
+    "customer": "Nasrin Sultana",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-01-17T10:15:00Z"
+  },
+  {
+    "id": "TKT-1014",
+    "title": "Search Filter Not Working",
+    "description": "Filtering by date range returns no results incorrectly.",
+    "customer": "Zubayer Ali",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-01-17T12:00:00Z"
+  },
+  {
+    "id": "TKT-1015",
+    "title": "Account Deletion Request",
+    "description": "User wants to permanently delete their account and data.",
+    "customer": "Anika Tabassum",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-01-17T14:10:00Z"
+  }
+]
