@@ -1,35 +1,33 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 import Banner from './Banner';
+import TicketCard from './cards/TicketCard';
+import TicketStatusCard from './cards/TicketStatusCard';
 
-const TicketContainer = ({promise}) => {
-    const data = use (promise);
-  const [tickets, setTicket] = useState(data);
-
-  const [ticketStatus, setTicketStatus] = useState([]);
-
-  const [resolvedTask, setResolvedTask] = useState([]);
-
-  const handleResolved=(ticket)=>{
+const TicketContainer = ({Promise}) => {
+    const data = use(Promise);
+    const [tickets, setTickets]=useState(data);
+    const [ticketStatus, setTicketStatus] = useState([]);
+    const [resolvedTask, setResolvedTask] = useState([]);
+    
+      const handleResolved=(ticket)=>{
     const newResolveTask=[...resolvedTask, ticket];
     setResolvedTask(newResolveTask);
 
-    const remaining = ticketStatus.filter(item=> item.title !== ticket.title);
+      const remaining = ticketStatus.filter(item=> item.title !== ticket.title);
     setTicketStatus(remaining);
 
     const remainingTicket = tickets.filter((item)=> item.id !== ticket.id )
-    setTicket(remainingTicket)
+    setTickets(remainingTicket)
+    };
 
-  };
-
-  const handleTicket=(tickets)=>{
+    const handleTicket=(tickets)=>{
     const newTicketStatus= [...ticketStatus, tickets];
     setTicketStatus(newTicketStatus);
     };
 
     return (
-        
-         <div>
-           <Banner ticketsStatusTotal={ticketStatus.length} ticketsTotal={tickets.length}
+        <div>
+            <Banner ticketsStatusTotal={ticketStatus.length} ticketsTotal={tickets.length}
             resolveTotal={resolvedTask.length}></Banner>
 
         <section className='w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-12 gap-5'>
@@ -40,7 +38,7 @@ const TicketContainer = ({promise}) => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
             {
                 tickets.map(tickets => 
-                <TricketCard handleTicket={handleTicket} key={tickets.id} tickets={tickets}></TricketCard>)
+                <TicketCard handleTicket={handleTicket} key={tickets.id} tickets={tickets}></TicketCard>)
             }
         </div>
         </div>
@@ -61,6 +59,9 @@ const TicketContainer = ({promise}) => {
         </section>
 
         </div>
+
+
+
     );
 };
 

@@ -1,8 +1,9 @@
 import React from 'react';
-import vector1 from "../assets/vector1.png"
-const Banner = ({ticketsTotal, ticketsStatusTotal,resolveTotal}) => {
+import vector1 from '../assets/vector1.png'
+
+const Banner = ({ticketsTotal, ticketsStatusTotal,resolveTotal }) => {
     return (
-         <div className="w-full my-10 py-4 flex flex-col lg:flex-row gap-6 justify-center items-center">
+        <div className="w-full my-10 py-4 flex flex-col lg:flex-row gap-6 justify-center items-center">
 
   {/* Card 1 */}
   <div className="relative w-full max-w-[708px]">
