@@ -20,6 +20,7 @@ function App() {
       <ticketsPromise promise={ticketsPromise}></ticketsPromise>
         </Suspense>
       </section>
+      
       <section>
         <Footer></Footer>
       </section>
