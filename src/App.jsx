@@ -1,11 +1,13 @@
 import './App.css'
+import Navbar from './component/Navbar'
+
 
 function App() {
-
-
   return (
     <>
-      <h2>ticket system</h2>
+      <header>
+        <Navbar></Navbar>
+      </header>
     </>
   )
 }
